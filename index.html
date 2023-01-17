@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    .topnav {
+    background-color: white;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Create a right-aligned (split) link inside the navigation bar */
+  .topnav a.split {
+    float: right;
+    background-color: white;
+    color: black;
+    margin-right: 300px;
+    
+  }
+  .join{
+    margin-left: 45%;
+
+    
+    
+
+  }
+  .container{
+    background-color: lightblue;
+    width: 100%;
+    height: 60px;
+  }
+  .pg{
+    background-color: lightblue;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+  }
+  
+  /* Clear floats after image containers */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+    
+  }
+  @media screen and (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+  }
+  .page{
+    text-align: center;
+    background-color: hotpink;
+    width: 40%;
+    height: 200px;
+    color: white;
+    padding: 50px;
+    margin-bottom: 20px;
+    
+  }
+  .join-here{
+    background-color: aquamarine;
+    color: white;
+    width: 70px;
+    height: 50px;
+    border-radius: 50%;
+
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    background-color: lightblue;
+
+}
+.container {
+    position: relative;
+    width: 50%;
+  }
+  
+  /* Make the image responsive */
+  .column img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Style the button and place it in the middle of the container/image */
+  .column .btn {
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    
+  }
+  
+  .column .btn:hover {
+    background-color: black;
+  }
+ 
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="topnav">
+        <a href="#home">Home</a>
+        <a href="#news">Help</a>
+        <a href="#contact">Contact</a>
+        <a href="#find" class="split">sign in</a>
+        <a href="#find" class="join">join now</a>
+        
+        
+      </div>
+      <div container>
+        <div class="pg">
+            <p>
+             <h1>   Start fresh with StarbucksÂ® Rewards</h1>
+             
+                <a href="join">join</a> today to earn your way to free coffee and treats.*
+            </p>
+            <br>
+            <div class="row">
+                <div class="column">
+                  <img src="drink.jpg" alt="Snow" style="width:100%">
+                </div>
+                <div class="column">
+                  <img src="drink.jpg" alt="Forest" style="width:100%">
+                </div>
+                </div>   
+                <br>
+                <div class="grid-container">
+
+                    <div class="grid-child purple">
+                        <p>
+                            <h1>New year, cool new brew</h1>
+<h3>Introducing Pistachio Cream Cold Brewâ€”bold, smooth coffee topped with pistachio cream cold foam.</h3>
+                        </p>
+                    </div>
+                
+                    <div class="grid-child green">
+                        <p>
+                           <h1>Pistachio your way</h1>
+Our <h3>creamy Pistachio FrappuccinoÂ® blended beverage satisfies all your winter cravings.</h3>
+                        </p>
+                    </div>
+                  
+                </div>
+                <div class="column">
+                    <img src="card.jpg" alt="Forest" style="width:100%">
+                  </div>
+                  <div class="column">
+                    <img src="you.png" alt="Forest" style="width:100%">
+                  </div>
+              
+</html>
+
+
+
